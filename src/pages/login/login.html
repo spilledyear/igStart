@@ -1,0 +1,49 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+  <div padding>
+    <ion-row>
+      <ion-col>
+        <img class="logo" src="assets/imgs/login-logo.png" alt="" >
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)" novalidate>
+          <ion-row>
+            <ion-col>
+              <ion-list inset class="no-border">
+                <ion-item  [class.error]="!username.valid && username.touched">
+                  <ion-label fixed>账号</ion-label>
+                  <ion-input type="text" [formControl]="username" clearInput=true></ion-input>
+                </ion-item>
+                <!--<div *ngIf="username.hasError('required') && username.touched" class="error-message">*请输入用户名</div>-->
+                <!--<div *ngIf="(username.hasError('minlength')||username.hasError('maxlength')||username.hasError('pattern')) && username.touched" class="error-message">*请输入正确的电话号码</div>-->
+
+                <ion-item>
+                  <ion-label fixed>密码</ion-label>
+                  <ion-input type="password" [formControl]="password" clearInput=true></ion-input>
+                </ion-item>
+                <!--<div *ngIf="password.hasError('required') && password.touched" class="error-message">{{loginForm.getError('password', 'password')?.info}}</div>-->
+                <!--<div *ngIf="(password.hasError('minlength')) && password.touched" class="error-message">*密码长度最少为六位</div>-->
+
+              </ion-list>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <div style="text-align: center">
+                <button ion-button round type="submit" class="login-button" [disabled]="!loginForm.valid">测&nbsp;&nbsp;试</button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </form>
+
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+
+
+

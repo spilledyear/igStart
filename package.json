@@ -1,0 +1,104 @@
+{
+  "name": "ZMapp",
+  "version": "1.0.0",
+  "author": "xiaoyong.luo@hand-china.com",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "4.4.4",
+    "@angular/compiler": "4.4.4",
+    "@angular/compiler-cli": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/forms": "4.4.4",
+    "@angular/http": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
+    "@ionic-native/camera": "^4.3.2",
+    "@ionic-native/core": "4.3.2",
+    "@ionic-native/diagnostic": "^4.3.2",
+    "@ionic-native/dialogs": "^4.3.2",
+    "@ionic-native/file": "^4.3.2",
+    "@ionic-native/file-transfer": "^4.3.2",
+    "@ionic-native/local-notifications": "^4.3.3",
+    "@ionic-native/network": "^4.3.2",
+    "@ionic-native/splash-screen": "4.3.2",
+    "@ionic-native/status-bar": "4.3.2",
+    "@ionic-native/toast": "^4.3.2",
+    "@ionic/storage": "2.0.1",
+    "cordova-android": "^6.3.0",
+    "cordova-ios": "^4.5.3",
+    "cordova-plugin-app-event": "^1.2.1",
+    "cordova-plugin-baidumaplocation": "^3.2.0",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-dialogs": "^1.3.3",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-file-transfer": "^1.6.3",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-jcore": "^1.1.10",
+    "cordova-plugin-network-information": "^1.3.3",
+    "cordova-plugin-splashscreen": "^4.0.3",
+    "cordova-plugin-statusbar": "^2.2.3",
+    "cordova-plugin-telerik-imagepicker": "^2.1.8",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "cordova-plugin-x-toast": "^2.6.0",
+    "cordova.plugins.diagnostic": "^3.7.1",
+    "de.appplant.cordova.plugin.local-notification": "^0.8.5",
+    "ionic-angular": "^3.8.0",
+    "ionic-plugin-keyboard": "^2.2.1",
+    "ionicons": "3.0.0",
+    "jpush-phonegap-plugin": "^3.2.11",
+    "rxjs": "5.4.3",
+    "sw-toolbox": "3.6.0",
+    "ts-md5": "^1.2.2",
+    "xiao-amlocation": "git+https://github.com/spilledyear/AMLocation.git",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "^3.0.1",
+    "typescript": "2.3.4"
+  },
+  "description": "筑美家居@V1.0.0",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": " ",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-network-information": {},
+      "cordova.plugins.diagnostic": {},
+      "jpush-phonegap-plugin": {
+        "APP_KEY": "37fd33fe32f499dc8a090618"
+      },
+      "cordova-plugin-statusbar": {},
+      "de.appplant.cordova.plugin.local-notification": {},
+      "xiao-amlocation": {},
+      "cordova-plugin-baidumaplocation": {
+        "ANDROID_KEY": "esNGsqBAbkwjECopBPv9tW62O6U59X72",
+        "IOS_KEY": "HV55F43HUh9nbwRIDQAsyoR5GE0iOKsV",
+        "IOS_LOCATION_DESC": "请点击'好'以允许访问。"
+      }
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

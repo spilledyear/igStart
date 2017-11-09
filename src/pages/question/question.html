@@ -1,0 +1,22 @@
+<!--
+  Generated template for the QuestionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>question</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <page-single-question *ngFor="let question of questions" [serial]="question.serial" [content]="question.content" (radioClick)="radioClick($event)">
+
+  </page-single-question>
+
+  <button ion-button (click)="submit()">提交</button>
+</ion-content>

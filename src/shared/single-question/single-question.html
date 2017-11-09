@@ -1,0 +1,38 @@
+
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <span>
+          {{ serial }}
+        </span>
+
+        <span>
+          {{ content }}
+        </span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row col-12>
+      <ion-col>
+        <ion-list radio-group (ionChange)="ionChange($event)">
+          <ion-item>
+            <ion-label>喜欢</ion-label>
+            <ion-radio value="cord"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>挺喜欢</ion-label>
+            <ion-radio value="duesenberg"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>很喜欢</ion-label>
+            <ion-radio value="hudson"></ion-radio>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div>

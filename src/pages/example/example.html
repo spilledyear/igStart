@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>example</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="zm-ion-content">
+  <ion-grid class="zm-ion-grid">
+    <ion-row class="zm-ion-row">
+      <ion-col col-5>
+        <ion-list class="zm-ion-list">
+          <ion-item class="zm-ion-item">
+            <ion-avatar item-start>
+              <img src="assets/imgs/github.png" (click)="goCamera()">
+            </ion-avatar>
+            <h2>01</h2>
+            <p>拍照</p>
+          </ion-item>
+
+          <ion-item class="zm-ion-item">
+            <ion-avatar item-start>
+              <img src="assets/imgs/github.png" class="item-img" (click)="goLocation()">
+            </ion-avatar>
+            <h1>02</h1>
+            <p>定位</p>
+          </ion-item>
+
+          <ion-item class="zm-ion-item">
+            <ion-avatar item-start>
+              <img src="assets/imgs/github.png" class="item-img" (click)="goImage()">
+            </ion-avatar>
+            <h1>03</h1>
+            <p>image</p>
+          </ion-item>
+
+          <ion-item class="zm-ion-item">
+            <ion-avatar item-start>
+              <img src="assets/imgs/github.png" class="item-img" (click)="goTable()">
+            </ion-avatar>
+            <h1>04</h1>
+            <p>tabel</p>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+
+
+      <ion-col col-7>
+        <ion-nav [root]="rootPage" #content ></ion-nav>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

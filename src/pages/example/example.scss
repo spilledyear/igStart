@@ -1,0 +1,23 @@
+page-example {
+  .zm-ion-content{
+    height:100%;
+
+    .zm-ion-grid{
+      height:100%;
+
+      .zm-ion-row{
+        height:100%;
+        padding-left:0;
+        img{
+          cursor: pointer;
+        }
+        .zm-ion-list{
+          .zm-ion-item{
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+}

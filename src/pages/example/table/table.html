@@ -1,0 +1,64 @@
+<!--
+  Generated template for the TablePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>项目进度</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--<ion-grid>-->
+  <!--<ion-row>-->
+  <!--<ion-col col-3>姓名</ion-col>-->
+  <!--<ion-col col-3>年龄</ion-col>-->
+  <!--<ion-col col-6>地址</ion-col>-->
+  <!--</ion-row>-->
+
+  <!--<ion-row *ngFor="let item of items" style="border-bottom: 1px">-->
+  <!--<ion-col col-3>{{item.name}}</ion-col>-->
+  <!--<ion-col col-3>{{item.age}}</ion-col>-->
+  <!--<ion-col col-6>{{item.address}}</ion-col>-->
+  <!--</ion-row>-->
+  <!--</ion-grid>-->
+
+  <table>
+    <tr>
+      <th>节点</th>
+      <th>开始时间</th>
+      <th>结束时间</th>
+    </tr>
+
+    <tr *ngFor="let item of items;">
+      <td>{{item.name}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.address}}</td>
+    </tr>
+  </table>
+
+  <p>使用 Angular 内置的 json 管道，来显示对象信息：</p>
+  <li>{{ items | json}}</li><br>
+
+  <p>*ngIf  指令</p>
+  <li *ngIf="1==1">1 == 1</li><br>
+
+  <p>*ng  指令</p>
+  <h2 *ngFor="let i of [1,2,3]">{{i}}</h2><br>
+
+
+  <p>自定义属性指令</p>
+  <h1 [sxylight]="'cyan'" defaultColor="violet">测试自定义属性指令</h1><br>
+
+
+  <p>自定义结构指令</p>
+  <h1 *sxyunless="false"> 测试自定义结构指令  </h1><br>
+
+  <p>自定义管道</p>
+  <h1>{{2 | sxypie: 10}}</h1><br>
+</ion-content>

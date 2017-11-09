@@ -1,0 +1,20 @@
+{
+  "name": "ZMapp",
+  "app_id": "com.hand.hem",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://10.28.249.253:8082/api"
+    }, {
+      "path": "/oauth",
+      "proxyUrl": "http://10.28.249.253:8082/oauth"
+    }, {
+      "path": "/prj",
+      "proxyUrl": "http://10.28.249.253:8082/prj"
+    }
+  ]
+}

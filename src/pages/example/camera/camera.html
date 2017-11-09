@@ -1,0 +1,28 @@
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button (click)="openCamera()">拍照</button>
+      </ion-col>
+
+      <ion-col col-4>
+        <button ion-button (click)="upload()">上传</button>
+      </ion-col>
+
+      <ion-col col-4>
+        <button ion-button (click)="download()">下载</button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <img [src]="path" alt="图片预览"/>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
