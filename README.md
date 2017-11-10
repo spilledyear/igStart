@@ -43,60 +43,61 @@ npm install -save ts-md5
 ### 添加插件 ,根据需要安装
 以下只是说明第一次安装插件时用到的命令，之后都不需要这样安装，在添加平台的时候会自动安装
 ```
-- Dialogs   弹框
+Dialogs   弹框
 ionic cordova plugin add cordova-plugin-dialogs
 npm install --save @ionic-native/dialogs
 
-- Camera     拍照
+Camera    拍照
 ionic cordova plugin add cordova-plugin-camera
 npm install --save @ionic-native/camera
 
-- File       文件
+File      文件
 ionic cordova plugin add cordova-plugin-file
 npm install --save @ionic-native/file
 
-- File Transfer    文件上传
+File Transfer    文件上传
 ionic cordova plugin add cordova-plugin-file-transfer
 npm install --save @ionic-native/file-transfer
 
-- com.kit.cordova.amaplocation   定位
-cordova plugin add https://github.com/yanxiaojun617/com.kit.cordova.amaplocation --save
-cordova plugin add https://github.com/spilledyear/AMLocation --save
-
-
-- Toast    poup消息提示
+Toast    poup消息提示
 ionic cordova plugin add cordova-plugin-x-toast
 npm install --save @ionic-native/toast
 
-- App Version    app版本
+App Version    app版本
 ionic cordova plugin add cordova-plugin-app-version
 npm install --save @ionic-native/app-version
 
-- Barcode Scanner   条形码扫描
+Barcode Scanner   条形码扫描
 ionic cordova plugin add phonegap-plugin-barcodescanner
 npm install --save @ionic-native/barcode-scanner
 
-- Network 
+Network 
 ionic cordova plugin add cordova-plugin-network-information
 npm install --save @ionic-native/network
 
-- Diagnostic 检查设备的各种xxx GPS、
+Diagnostic 检查设备的各种xxx GPS、
 ionic cordova plugin add cordova.plugins.diagnostic
 npm install --save @ionic-native/diagnostic
 
--jpush-phonegap-plugin 极光推送
+jpush-phonegap-plugin 极光推送
 ionic cordova plugin add jpush-phonegap-plugin --variable APP_KEY=37fd33fe32f499dc8a090618
 
--de.appplant.cordova.plugin.local-notification 本地通知
+de.appplant.cordova.plugin.local-notification 本地通知
 ionic cordova plugin add de.appplant.cordova.plugin.local-notification
 npm install --save @ionic-native/local-notifications
 
-https://github.com/spilledyear/AMLocation.git
 
-百度定位
+定位
+高德定位，不确定 IOS 能不能用
+cordova plugin add https://github.com/yanxiaojun617/com.kit.cordova.amaplocation --save
+高德定位，不确定 IOS 能不能用
+cordova plugin add https://github.com/spilledyear/AMLocation --save
+
+
+百度定位 cordova-plugin-baidumaplocation，不确定 IOS 能不能用
 cordova plugin add cordova-plugin-baidumaplocation --variable ANDROID_KEY="esNGsqBAbkwjECopBPv9tW62O6U59X72" --variable IOS_KEY="HV55F43HUh9nbwRIDQAsyoR5GE0iOKsV"
 
-高德定位
+高德定位 cordova-plugin-gaode-location，不确定 IOS 能不能用
 cordova plugin add https://github.com/spilledyear/cordova-plugin-gaode-location --variable ANDROIDKEY="c278a9609c6d207e7ccdb9de60b7fd63" --variable IOSKEY="1377a38539a5e5bef65ff691a822dec6" --save 
 
 ```
