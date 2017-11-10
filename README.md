@@ -1,6 +1,14 @@
 ## 使用手册
 *使用 ionic start appName tabs 新建一个 ionic 项目，这样就有了一个项目模板，只需要在此基础上进行修改。
 
+```
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:spilledyear/igStart.git
+git push -u origin master
+
+```
 
 ### 启动项目
 ```
